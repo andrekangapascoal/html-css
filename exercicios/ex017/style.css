@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  text-align: justify;
+  text-indent: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: red;
+}
+
+h2 {
+  color: blue;
+  text-align: center;
+}
+
+h1#principal {
+  text-align: left;
+}
+
+h1.final {
+  text-align: start;
+}

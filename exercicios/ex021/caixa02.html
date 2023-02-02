@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping tags</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+        margin: 0px;
+      }
+      header {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+      article {
+        background-color: lightgray;
+      }
+      article > aside {
+        background-color: rgb(126, 113, 113);
+      }
+      nav {
+        background-color: rgb(65, 57, 57);
+        padding: 3px;
+        box-shadow: 5px 3px 7px 1px black;
+      }
+      h1 {
+        box-shadow: inset 1px 2px 3px 2px;
+        padding-left: 10px;
+      }
+      nav > a {
+        color: white;
+        padding-left: 5px;
+        text-decoration: none;
+        margin-right: 30px;
+      }
+      nav > a:hover {
+        font-weight: bold;
+        background-color: rgb(250, 67, 67);
+        text-decoration: underline;
+      }
+      main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px 0px;
+        box-shadow: 4px 4px 9px 0px rgb(0, 0, 0.384);
+      }
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 4px;
+        margin: 0px;
+      }
+      footer > p {
+        margin: 0px;
+      }
+      #conteudoAstro {
+        text-indent: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu site</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assunto">
+        <p>Exporte Política e Tecnologia</p>
+      </section>
+      <section id="noticias">
+        <article>
+          <h2>Notícia sobre o <abbr title="Asteroide">DX</abbr></h2>
+          <p id="conteudoAstro">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
+            architecto dicta eum quod, fugiat, reiciendis incidunt eligendi
+            iusto molestias neque, assumenda ad in accusantium ducimus vel
+            nulla. Voluptatum, nulla ab.
+          </p>
+          <aside>
+            <p>
+              Artigo escrito por:
+              <abbr title="André Kaga Pascoal">Asteroide</abbr>
+            </p>
+          </aside>
+        </article>
+        <article></article>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido pelo <abbr title="Asteroide">DX</abbr></p>
+    </footer>
+  </body>
+</html>
