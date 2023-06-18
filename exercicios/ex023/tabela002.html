@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=h1, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table {
+        width: 500px;
+        border-collapse: collapse;
+        position: absolute;
+      }
+
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      thead,
+      tfoot {
+        background-color: gray;
+        color: white;
+      }
+
+      thead > tr > th {
+        position: sticky;
+        top: 45px;
+        background-color: gray;
+      }
+
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgrey;
+        position: sticky;
+        top: 0;
+      }
+
+      tbody > tr:nth-child(2n) {
+        background-color: lightgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia das tabelas grandes
+        
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+      <caption>
+        Tabelas dos estados Brasil
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 50px">População</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Sáo Paulo</td>
+          <td>499 19 049</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td>21 168 791</td>
+        </tr>
+        <tr>
+          <td>Primeiro de maio</td>
+          <td>18 234 958</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td>17 264 943</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td>17 264 943</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td>21 168 791</td>
+        </tr>
+        <tr>
+          <td>Primeiro de maio</td>
+          <td>18 234 958</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td>17 264 943</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td>17 264 943</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td>21 168 791</td>
+        </tr>
+        <tr>
+          <td>Primeiro de maio</td>
+          <td>18 234 958</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td>17 264 943</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td>17 264 943</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td>21 168 791</td>
+        </tr>
+        <tr>
+          <td>Primeiro de maio</td>
+          <td>18 234 958</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td>17 264 943</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td>17 264 943</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td>21 168 791</td>
+        </tr>
+        <tr>
+          <td>Primeiro de maio</td>
+          <td>18 234 958</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td>17 264 943</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td>17 264 943</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td>21 168 791</td>
+        </tr>
+        <tr>
+          <td>Primeiro de maio</td>
+          <td>18 234 958</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td>17 264 943</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td>17 264 943</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total de Habitantes</th>
+          <td>000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
